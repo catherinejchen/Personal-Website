@@ -118,6 +118,14 @@ h3{
     margin-top: 60px;
 }
 
+.title-font{
+    font-size: 2vw;
+    /* why no transform */
+    text-transform: uppercase;
+    letter-spacing: 1vw;
+    color: #000000;
+}
+
 .header-font{
     font-size: 13px;
     text-transform: uppercase;
@@ -133,6 +141,7 @@ h3{
 .text-font{
     letter-spacing: 1px;
     line-height: 18px;
+    font-style: 12px;
 }
 
 .center{
@@ -194,9 +203,13 @@ h3{
     position: relative;
     text-align: center;
     color: #000000;
-    font-size: 15px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
+}
+
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .bottom-left{
@@ -488,34 +501,87 @@ hr{
     object-fit: cover;
 }
 
-.margin-fifty-sides{
-    margin-left: 50px;
-    margin-right: 50px;
+.caption{
+    position: relative;
+    float: right;
+    width: 60%;
+    margin-top: -15vw;
+    margin-right: -10vw;
+    padding: 0 2vw 1vw 2vw;
+    background-color: rgb(240, 240, 240);
+    z-index: 2;
 }
 
 .memory-grid{
-    margin: 200px 50px 200px 50px;
+    margin: 100px 30px 130px 30px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 10vw 10vw 10vw 10vw 10vw;
+    grid-template-columns: 8fr 1fr;
+    grid-template-rows: 45vw;
     grid-gap: 0;
 }
 
 .memory-grid__item--1{
     grid-column-start: 1;
-    grid-column-end: 5;
+    grid-column-end: 3;
     grid-row-start: 1;
-    grid-row-end: 5;
+    grid-row-end: 2;
     object-fit: cover;
 }
 
-.memory-grid__item--2{
+.lessons-style{
+    margin-top: 10vw;
+}
+
+/* .memory-grid__item--2{
     grid-column-start: 4;
     grid-column-end: 6;
     grid-row-start: 4;
     grid-row-end: 6;
     object-fit: cover;
+} */
+
+.vert-align{
+    align-items: center;
 }
+
+.info-text-font{
+    letter-spacing: 0.2vw;
+    line-height: 1.5vw;
+    font-size: 1.1vw;
+}
+
+.memory-header-font{
+    letter-spacing: 0.3vw;
+    line-height: 1.5vw;
+    font-size: 1.9vw;
+    text-transform: uppercase;
+    /* font-family: myriad-pro, sans-serif; */
+}
+
+.memory-text-font{
+    letter-spacing: 0.2vw;
+    line-height: 1.5vw;
+    font-size: 1.2vw;
+    /* font-family: myriad-pro, sans-serif; */
+}
+
+/* .header-font{
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #000000;
+}
+
+.blurb-font{
+    letter-spacing: 1px;
+    line-height: 18px;
+}
+
+.text-font{
+    letter-spacing: 1px;
+    line-height: 18px;
+    font-style: 12px;
+} */
 
 .great-vibes-font{
     font-family: 'Great Vibes';
