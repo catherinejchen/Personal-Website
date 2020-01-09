@@ -13,7 +13,16 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
+// ?? !! *need to fix
 var modal = document.getElementById('modal01');
+var modal = document.getElementById('modal02');
+var modal = document.getElementById('modal03');
+var modal = document.getElementById('modal04');
+var modal = document.getElementById('modal05');
+var modal = document.getElementById('modal06');
+var modal = document.getElementById('modal07');
+var modal = document.getElementById('modal08');
+var modal = document.getElementById('modal09');
 
 window.onclick = function(event) {
   if (event.target == modal) {

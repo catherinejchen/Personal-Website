@@ -459,8 +459,9 @@ hr{
 
 .flex-container > div{
     background-color: #f1f1f1;
-    width: 30vw;
-    margin: 2vw;
+    /* width: 30vw; */
+    width: 175px;
+    margin: 2.5vw;
     text-align: center;
 }
 
@@ -528,6 +529,7 @@ hr{
     font-family: 'Great Vibes';
     font-size: 2.3vw;
     letter-spacing: 0.4vw;
+    text-transform: lowercase;
 }
 
 .blurb-style{
@@ -616,6 +618,9 @@ hr{
 
 .block-style{
     background-color: rgb(240, 240, 240);
+    width: calc(100%);
+    margin-left: -30px;
+    padding: 30px;
 }
 
 .photo-text-grid{
