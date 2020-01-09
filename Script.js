@@ -12,3 +12,11 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+var modal = document.getElementById('modal01');
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
