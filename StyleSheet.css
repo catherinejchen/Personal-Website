@@ -955,7 +955,7 @@ nav{
         margin: 0 50px;
     }
     .instagram-grid-mobile .instagram-photo {
-            margin-bottom: 30px;
+            margin-bottom: 50px;
     }
 }
 
@@ -965,7 +965,7 @@ nav{
     margin: 0 50px;
 }
 .instagram-photo {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 .projects-grid {
     display: grid;
