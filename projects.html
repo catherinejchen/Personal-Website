@@ -2,7 +2,9 @@
 
 <html>
     <head>
-        <meta charset="utf-8">
+        <meta charsets="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Home</title>
         <link rel="stylesheet" href="W3.css">
         <link href="StyleSheet.css" rel="StyleSheet" type="text/css">
@@ -32,7 +34,7 @@
         </div>   
         <div class="content">
             <div class="margin-zero">                                                                                                                                                                                                                                           
-                <img class="header-photo" src="AboutMeCover.jpg" alt="About Me Cover">
+                <img class="header-photo" src="projects-cover.jpg" alt="Projects Cover">
             </div>
             <div class="margin-thirty">
                 <p class="header-font center">
@@ -42,6 +44,58 @@
                
             <div class="flex-container">
 
+                <div>
+                    <img class="photo-gallery w3-hover-opacity" style="cursor: pointer" src="elevate-cover.jpg" alt=""
+                    onclick="document.getElementById('modal10').style.display='block'">
+                    <div id="modal10" class="w3-modal">
+                        <div class="w3-modal-content w3-animate-opacity">
+                            <div class="w3-container margin-sixty-bottom">
+                                <span onclick="document.getElementById('modal10').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                <div class="padding-thirty">
+                                    <p class="projects-header-style center">Elevate</p>
+                                    <p class="great-vibes-blurb center">practice your public speaking here</p>
+                                    <div class="projects-grid margin-thirty blurb-style">
+                                        <div class="projects-grid__item projects-grid__item--2 projects-info-style">
+                                            <p class="center">bleh
+                                            </p>
+                                        </div>
+                                        <div class="projects-grid__item projects-grid__item--1 project-photos-grid">
+                                            <div class="project-photos-grid__item project-photos-grid__item--1">
+                                                <img src="temp1.jpg" alt="" class="photo-gallery">
+                                            </div>
+                                            <div class="project-photos-grid__item project-photos-grid__item--2">
+                                                <img src="temp2.jpg" alt="" class="photo-gallery">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="tools-style projects-style">
+                                        <p>
+                                            TOOLS
+                                            <br>
+                                            <br>- C#
+                                            <br>- Unity
+                                            <br>- Photoshop
+                                        </p>
+                                    </div>
+                                    <div class="projects-style margin-thirty">
+                                        <p>
+                                            WANT TO PLAY THE GAME?
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p class="projects-style">
+                                            press <a href="https://play.google.com/store/apps/details?id=com.rats.TappyCat" alt="" class="no-decoration"><i>here</i></a>
+                                            <br>
+                                            <br>
+                                            Note: Graphics were created by Rebecca Zhao
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
 
                 <div>
                     <img class="photo-gallery w3-hover-opacity" style="cursor: pointer" src="temp2.jpg" alt=""
@@ -534,11 +588,11 @@
                 <p class="text-font center">designed and created by catherine chen</p>
             </div>
         </div>
-        <script>
+        <!-- <script>
         if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent))) {
             document.querySelector(".flex-container").style.display = "block";
         }
-        </script>
+        </script> -->
         <script src="Script.js"></script>
     </body>
 </html>
