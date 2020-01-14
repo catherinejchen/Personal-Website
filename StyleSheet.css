@@ -962,11 +962,15 @@ nav{
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media (max-width: 400px) {
     .flex-container {
-        margin: 30px 50px;
+      display: block;
     }
-    .flex-container > div{
+}
+
+@media (min-width: 768px) {
+    .flex-container > div {
+        margin: 30px 50px;
         width: 175px;
     }
 }
