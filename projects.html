@@ -534,6 +534,11 @@
                 <p class="text-font center">designed and created by catherine chen</p>
             </div>
         </div>
+        <script>
+        if ((/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent))) {
+            document.querySelectorAll(".flex-container > div").forEach(el => el.style.cssText += "width: 175px; margin: 30px 50px;");
+        }
+        </script>
         <script src="Script.js"></script>
     </body>
 </html>

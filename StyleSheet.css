@@ -456,14 +456,12 @@ hr{
 .flex-container{
     display: flex;
     flex-flow: row wrap;
-    margin: 30px 50px;
     justify-content: center;
 }
 
 .flex-container > div{
     background-color: #f1f1f1;
     /* width: 30vw; */
-    width: 175px;
     margin: 2.5vw;
     text-align: center;
 }
@@ -961,6 +959,15 @@ nav{
     
     .instagram-grid-mobile .instagram-photo {
         margin-bottom: 30px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .flex-container {
+        margin: 30px 50px;
+    }
+    .flex-container > div{
+        width: 175px;
     }
 }
 
