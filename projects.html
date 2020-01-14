@@ -535,8 +535,8 @@
             </div>
         </div>
         <script>
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
-            document.querySelectorAll(".flex-container").style.display = "block";
+        if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent))) {
+            document.querySelector(".flex-container").style.display = "block";
         }
         </script>
         <script src="Script.js"></script>
