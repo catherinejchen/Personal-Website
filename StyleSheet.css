@@ -951,15 +951,6 @@ nav{
         margin-top: 15px;
         grid-row: 2;
     }
-
-    .instagram-grid-mobile {
-        display: block;
-        margin: 0 50px;
-    }
-    
-    .instagram-grid-mobile .instagram-photo {
-        margin-bottom: 30px;
-    }
 }
 
 @media (min-width: 768px) {
