@@ -970,7 +970,11 @@ nav{
 }
 .flex-container {
     display: block;
-  }
+    margin: 0 50px;
+}
+.flex-container > div {
+    margin-bottom: 30px;
+}
 .projects-grid {
     display: grid;
     margin: 0 0 20px 0;
