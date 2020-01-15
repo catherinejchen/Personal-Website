@@ -962,12 +962,6 @@ nav{
     }
 }
 
-@media (max-width: 400px) {
-    .flex-container {
-      display: block;
-    }
-}
-
 @media (min-width: 768px) {
     .flex-container > div {
         margin: 30px 50px;
@@ -983,6 +977,9 @@ nav{
 .instagram-photo {
     margin-bottom: 30px;
 }
+.flex-container {
+    display: block;
+  }
 .projects-grid {
     display: grid;
     margin: 0 0 20px 0;
