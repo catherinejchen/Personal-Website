@@ -93,7 +93,8 @@ h3{
 
 .header-photo{
     width: 100%;
-    height: 100%;
+    height: calc(100vh - 63.2px - 30px);
+    object-fit: cover;
 }
 
 .padding-thirty{
@@ -467,13 +468,13 @@ hr{
 .flex-container > div{
     background-color: #f1f1f1;
     /* width: 30vw; */
-    margin: 2.5vw;
+    margin: 1vw;
     text-align: center;
 }
 
 .projects-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     grid-template-rows: 40vw;
     grid-gap: 5vw;
 }
@@ -516,9 +517,9 @@ hr{
 .projects-info-style{
     /* margin-top: 5.5vw; */
     align-self: center;
-    font-size: 1.5vw;
+    font-size: 1vw;
     letter-spacing: 0.3vw;
-    line-height: 3vw;
+    line-height: 2vw;
     font-family: myriad-pro, sans-serif;
     font-style: normal;
 }
@@ -962,7 +963,7 @@ nav{
 @media (min-width: 768px) {
     .flex-container > div {
         margin: 30px 50px;
-        width: 175px;
+        width: 225px;
     }
 }
 
@@ -984,6 +985,7 @@ nav{
 .projects-grid {
     display: grid;
     margin: 0 0 20px 0;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 40vw;
 }
 
