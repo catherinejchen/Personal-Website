@@ -241,6 +241,11 @@ h3{
     height: 100%;
 }
 
+.border{
+    padding: 10px;
+    /* border: 1px dashed black; */
+}
+
 
 /* home page */
 
@@ -469,7 +474,7 @@ hr{
 .projects-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 20vw;
+    grid-template-rows: 40vw;
     grid-gap: 5vw;
 }
 
@@ -510,6 +515,7 @@ hr{
 
 .projects-info-style{
     /* margin-top: 5.5vw; */
+    align-self: center;
     font-size: 1.5vw;
     letter-spacing: 0.3vw;
     line-height: 3vw;
@@ -534,7 +540,7 @@ hr{
 }
 
 .blurb-style{
-    margin-bottom: 25vw;
+    margin-bottom: 30px;
 }
 
 .tools-style{
