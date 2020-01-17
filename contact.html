@@ -44,28 +44,31 @@
                 </p>
             </div>
             <div class="contact-container">
-                <form action="action_page.php">
+                <div>
                     <div class="contact-grid">
                         <div class="contact-grid__item contact-grid__item--1">
-                            <input type="text-important" id="fullname" name="fullname" placeholder="full name">
+                            <input required type="text" id="fullname" name="fullname" placeholder="full name">
                         </div>
                         <div class="contact-grid__item contact-grid__item--2">
-                            <input type="text-important" id="email" name="email" placeholder="e - mail">
+                            <input required type="email" id="email" name="email" placeholder="e - mail">
                         </div>
                     </div>
                     <br>
-                    <input type="text" id="num" name="phone number" placeholder="phone number">
+                    <input type="tel" id="num" name="phone number" placeholder="phone number">
+                    <br>
+                    <br>
+                    <input required type="text" id="subject" name="subject" placeholder="subject">
 
                     <br>
                     <br>
 
-                  <textarea id="subject" name="subject" placeholder="your message" style="height:40px"></textarea>
+                  <textarea required id="contact-message" name="message" placeholder="your message" style="height:40px"></textarea>
                   
                   <br>
 
-                  <input type="submit" value="Submit">
-              
-                </form>
+                  <button name="submit" onClick="sendContact();">Submit</button>
+                <p id="mail-status"></p>
+                </div>
             </div>
             <div class="socials-style">
                 <p>
@@ -79,6 +82,7 @@
                 <p class="text-font center">designed and created by catherine chen</p>
             </div>
         </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="Script.js"></script>
     </body>
 </html>
