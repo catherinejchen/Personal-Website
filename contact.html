@@ -32,29 +32,36 @@
             <div>                                                                                                                                                                                                                                           
                 <img class="header-photo" src="contact-cover.jpg" alt="Contact Cover">
             </div>
+            <div class="centered">
+                <hr class="main-line">
+                <p id="header-text" class="main-header-font">
+                    CONTACT
+                </p>
+                <hr class="main-line">
+            </div>
             <a href="#index-buttons" class="arrow-container no-decoration">
                 <div class="chevron"></div>
                 <div class="chevron"></div>
                 <div class="chevron"></div>
                 <span class="arrow-text">Scroll down</span>
             </a>
-            <div class="margin-thirty">
+            <div id="index-buttons" class="margin-thirty">
                 <p class="header-font center">
                     Get in touch with me!
                 </p>
             </div>
             <div class="contact-container">
-                <div>
+                <form method="POST" action="https://script.google.com/macros/s/AKfycbw6GEuq3qsNgfMoIRNbn6oigbv68HBse_dxdnMULBLGNYfcCgHj/exec">
                     <div class="contact-grid">
                         <div class="contact-grid__item contact-grid__item--1">
-                            <input required type="text" id="fullname" name="fullname" placeholder="full name">
+                            <input required type="text" id="fullname" name="full name" placeholder="full name">
                         </div>
                         <div class="contact-grid__item contact-grid__item--2">
                             <input required type="email" id="email" name="email" placeholder="e - mail">
                         </div>
                     </div>
                     <br>
-                    <input type="tel" id="num" name="phone number" placeholder="phone number">
+                    <input type="tel" pattern="^[0-9-+\s()]*$" id="num" name="phone number" placeholder="phone number">
                     <br>
                     <br>
                     <input required type="text" id="subject" name="subject" placeholder="subject">
@@ -66,9 +73,9 @@
                   
                   <br>
 
-                  <button name="submit" onClick="sendContact();">Submit</button>
+                  <button>Submit</button>
                 <p id="mail-status"></p>
-                </div>
+                </form>
             </div>
             <div class="socials-style">
                 <p>

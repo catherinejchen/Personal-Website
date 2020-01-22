@@ -5,9 +5,11 @@
 
 body{
     margin: 0;
+    /* display: flex; */
     font-family: myriad-pro, sans-serif;
     font-style: normal;
     font-size: 12px;
+    /* justify-content: center; */
 }
 
 html {
@@ -107,8 +109,23 @@ h3{
     /* filter: blur(4px); */
 }
 
+#header{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+#header-text {
+}
+  
+
 .padding-thirty{
     padding: 30px;
+}
+
+.padding-top-thirty{
+    padding-top: 30px;
 }
 
 .margin-thirty{
@@ -191,7 +208,7 @@ h3{
 }
 
 .main-line{
-    border: 2px solid white;
+    border: 1px solid #ffffff;
     opacity: 1;
 }
 
@@ -272,12 +289,13 @@ h3{
 .arrow-container {
     position: absolute;
     bottom: 10px;
-    left: calc(50% + 28px);
+    left: calc(50%);
     transform: translate(-50%, -50%);
   }
 
   .chevron {
     position: absolute;
+    left: calc(50% - 14px);
     width: 28px;
     height: 8px;
     opacity: 0;
@@ -336,7 +354,6 @@ h3{
   .arrow-text {
     display: block;
     margin-top: 75px;
-    margin-left: -30px;
     font-family: myriad-pro, sans-serif;
     font-style: normal;
     letter-spacing: 2px;
@@ -356,6 +373,10 @@ h3{
 
 
 /* home page */
+
+/* #home {
+    opacity: 0;
+} */
 
 .photo-grid{
     margin: 0 0 9px 0;
@@ -1122,3 +1143,6 @@ nav{
     grid-row-end: 5;
 }
 }
+
+/* animations */
+
