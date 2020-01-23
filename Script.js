@@ -1,38 +1,38 @@
-// $.fn.characterize = function (wrapper, options) {
-//   var txt = this.text(),
-//       self = this;
+$.fn.characterize = function (wrapper, options) {
+  var txt = this.text(),
+      self = this;
 
-//   this.empty();
+  this.empty();
 
-//   wrapper = wrapper || '<span />';
-//   options = options || {};
+  wrapper = wrapper || '<span />';
+  options = options || {};
 
-//   Array.prototype.forEach.call(txt, function (c) {
-//     options.text = c;
-//     self.append($(wrapper, options));
-//   });
-// };
+  Array.prototype.forEach.call(txt, function (c) {
+    options.text = c;
+    self.append($(wrapper, options));
+  });
+};
 
 
-// function animateHeader() {
-//   var wlc = $('#header-text');
+function animateHeader() {
+  var wlc = $('#header-text');
 
-//   wlc.characterize('<span />', {
-//     class: 'fd',
-//     css: {
-//       opacity: 0
-//     }
-//   });
+  wlc.characterize('<span />', {
+    class: 'fd',
+    css: {
+      opacity: 0
+    }
+  });
   
-//   wlc.css('opacity', 1);
+  wlc.css('opacity', 1);
 
-//   $('.fd').each(function (i) {
-//     $(this).delay(i* 750).animate({opacity: 1}, (i + 1) * 300);
-//   });
-// }
+  $('.fd').each(function (i) {
+    $(this).delay(i* 750).animate({opacity: 1}, (i + 1) * 300);
+  });
+}
 
 
-// animateHeader();
+animateHeader();
 
 
 var acc = document.getElementsByClassName("accordion");
@@ -81,39 +81,3 @@ function sendContact() {
       error:function (){}
   });
 }
-
-$.fn.characterize = function (wrapper, options) {
-  var txt = this.text(),
-      self = this;
-
-  this.empty();
-  
-  wrapper = wrapper || '<span />';
-  options = options || {};
-
-  Array.prototype.forEach.call(txt, function (c) {
-    options.text = c;
-    self.append($(wrapper, options));
-  });
-};
-
-function animate () {
-  var htxt = $('#header-text');
-
-  htxt.characterize('<span />', {
-    class: 'fd',
-    css: {
-      opacity: 0
-    }
-  });
-  
-  htxt.css('opacity', 1);
-
-  $('.fd').each(function (i) {
-    
-    $(this).animate({opacity: 1}, 1000);
-  });
-}
-
-
-animate();

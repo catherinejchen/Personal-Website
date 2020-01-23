@@ -104,7 +104,7 @@ h3{
 
 .header-photo{
     width: 100%;
-    height: calc(100vh - 63.2px - 30px);
+    height: calc(100vh - 63.6px - 30px);
     object-fit: cover;
     /* filter: blur(4px); */
 }
@@ -117,6 +117,7 @@ h3{
 }
   
 #header-text {
+    text-indent: 6px;
 }
   
 
@@ -162,16 +163,24 @@ h3{
     color: #000000;
 }
 
+.header-container {
+    position: relative;
+}
+
 .header-font{
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 3px;
     color: #000000;
+    margin: 0;
+    padding-top: 30px;
 }
 
 .blurb-font{
     letter-spacing: 1px;
     line-height: 18px;
+    margin: 0;
+    padding-top: 30px;
 }
 
 .text-font{
@@ -207,8 +216,15 @@ h3{
     font-weight: 500;
 }
 
+.fd:last-child {
+    position: relative;
+    letter-spacing: 10px;
+}
+
 .main-line{
-    border: 1px solid #ffffff;
+    border-color: #fff;
+    width: 50%;
+    margin: 0 auto;
     opacity: 1;
 }
 
@@ -288,7 +304,7 @@ h3{
 /* arrow */
 .arrow-container {
     position: absolute;
-    bottom: 10px;
+    bottom: -10px;
     left: calc(50%);
     transform: translate(-50%, -50%);
   }
@@ -710,7 +726,6 @@ hr{
 
 /* interests page */
 .interests-blurb{
-    margin-top: 30px;
     text-align: justify;
 }
 
@@ -924,6 +939,9 @@ hr{
     overflow: hidden;
 }
 
+.view-resume {
+    padding-top: 30px;
+}
 
 /* contact page */
 
