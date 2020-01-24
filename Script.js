@@ -66,18 +66,3 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-
-function sendContact() {
-  jQuery.ajax({
-      url: "mail.php",
-      data:'fullname='+$("#fullname").val()+'&email='+
-      $("#email").val()+'&phone='+
-      $("#num").val()+'&subject='+
-      $("#subject").val()+'content='+$("contact-message"),
-      type: "POST",
-      success:function(data){
-          $("#mail-status").html(data);
-      },
-      error:function (){}
-  });
-}

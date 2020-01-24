@@ -1006,11 +1006,12 @@ textarea {
     padding-top: 10px;
 }
   
-button[name=submit] {
+.submit{
     background-color: white;
     border: 1px solid #ccc;
     color: black;
     margin-top: 30px;
+    margin-bottom: 30px;
     padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
